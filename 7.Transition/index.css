@@ -1,0 +1,27 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 12px;
+    transition: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+    
+}
+section{
+   display: flex;
+   justify-content: center;
+}
+div:hover{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    
+}
+div:active{
+    background-color: aqua;
+    color: blueviolet;
+}

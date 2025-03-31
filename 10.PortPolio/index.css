@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray for text */
+    background-image:url(./images/pexels-falling4utah-1934846.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-image: url(./images/pexels-googledeepmind-17485608.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(236, 89, 9);
+    border: 4px solid black;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+.profile-photo {
+    width: 120px; /* Set the width of the profile photo */
+    height: 120px; /* Set the height of the profile photo */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-bottom: 20px; /* Space between the photo and text */
+}
+
+.name {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect */
+}
+
+/* Section Styles */
+section {
+    background-image: url(./images/pexels-tara-winstead-8386363.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: rgba(255, 255, 255, 0.95); Slightly transparent white */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    max-width: 600px;
+    position: relative;/* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif; /* Font family */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        color: #333; /* Dark gray for text */
+        background-color: #f9f9f9; /* Light gray background */
+    }
+    
+    header {
+        background: #2c3e50; /* Dark navy blue for header */
+        color: white; /* White text color */
+        text-align: center; /* Center align text */
+        padding: 50px 20px; /* Padding for header */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+    
+    .profile-photo {
+        width: 120px; /* Width of the profile photo */
+        height: 120px; /* Height of the profile photo */
+        border-radius: 50%; /* Circular shape */
+        object-fit: cover; /* Cover the area without distortion */
+        margin-bottom: 20px; /* Space between the photo and text */
+    }
+    
+    .name {
+        font-size: 2.5em; /* Font size for name */
+        margin: 0; /* Remove default margin */
+        animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    }
+    
+    .tagline {
+        font-size: 1.2em; /* Font size for tagline */
+        margin: 10px 0 0; /* Margin for spacing */
+    }
+    
+    /* Section Styles */
+    section {
+        background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+        margin: 20px auto; /* Center the section */
+        padding: 20px; /* Padding for section */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Transition effects */
+        max-width: 600px; /* Maximum width for sections */
+        position: relative; /* Positioning context */
+    }
+    
+    section:hover {
+        transform: scale(1.05); /* Scale up on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+    }
+    
+    h2 {
+        color: #2980b9; /* Teal color for headings */
+        border-bottom: 2px solid #3498db; /* Lighter teal for underline */
+        padding-bottom: 5px; /* Padding below heading */
+        position: relative; /* Positioning context for underline */
+    }
+    
+    h2::after {
+        content: ''; /* Empty content for pseudo-element */
+        position: absolute; /* Absolute positioning */
+        left: 0; /* Align to the left */
+        right: 0; /* Align to the right */
+        bottom: -5px; /* Position below the heading */
+        height: 3px; /* Height of the underline */
+        background: rgba(255, 255, 255, 0.5); /* Light background for underline */
+        transition: width 0.3s; /* Transition for width */
+        width: 0; /* Initial width */
+    }
+    
+    h2:hover::after {
+        width: 100%; /* Full width on hover */
+    }
+    
+    ul {
+        list-style-type: none; /* Remove default list styling */
+        padding: 0; /* Remove padding */
+    }
+    
+    li {
+        background: #e7f3ff; /* Light blue for list items */
+        margin: 5px 0; /* Margin between list items */
+        padding: 10px; /* Padding for list items */
+        border-radius: 5px; /* Rounded corners */
+        transition: background 0.3s, transform 0.3s; /* Transition effects */
+    }
+    
+    li:hover {
+        background: #d0e7ff; /* Slightly darker blue on hover */
+        transform: translateY(-2px); /* Lift effect on hover */
+    }
+    
+    /* Footer Styles */
+    .footer {
+        text-align: center; /* Center align footer text */
+        padding: 20px; /* Padding for footer */
+        background: #2c3e50; /* Dark navy blue */
+        color: white; /* White text color */
+        position: relative; /* Positioning context */
+        bottom: 0; /* Align to bottom */
+        width: 100%; /* Full width */
+    }
+    
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+        from {
+            opacity: 0; /* Start invisible */
+            transform: translateY(-20px); /* Slide in from above */
+        }
+        to {
+            opacity: 1; /* Fully visible */
+            transform: translateY(0); /* Original position */
+        }
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .name {
+            font-size: 2em; /* Smaller font size for name */
+        }
+    
+        .tag
+}
+
+section:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+}
+
+h2 {
+    color: #2980b9; /* Teal color for headings */
+    border-bottom: 2px solid #3498db; /* Lighter teal for underline */
+    padding-bottom: 5px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: width 0.3s;
+    width: 0;
+}
+
+h2:hover::after {
+    width: 100%; /* Underline effect on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgb(87, 87, 160);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+li:hover {
+    background: #d0e7ff; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50; /* Dark navy blue */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .name {
+        font-size: 2em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
